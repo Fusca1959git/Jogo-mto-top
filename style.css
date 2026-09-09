@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red, orange, yellow);
+    background-size: 400% 100%;
+    -webkit-background-clip: border-box;
+    animation: rainbow 10s linear infinite;
+}
+.jogo{
+    text-align: center;
+}
+h1{
+    font-size: 100px;
+}
+.informacoes{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+.sub-info{
+    background-color: rgb(255, 0, 212);
+    padding: 10px 20px;
+    border-radius: 10px;
+    min-width: 100px;
+}
+.sub-info span{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+#butao{
+    background-color: black;
+    color: white;
+    width: 250px;
+    height: 250px;
+    margin-top: 40%;
+    border-color: rgb(0, 255, 4);
+    border-radius: 100%;
+    transition: all 0.1s;
+    font-size: 60px;
+    cursor: pointer;
+}
+#butao:hover{
+    transform: scale(1.05)
+}
+#butao:active{
+    transform: scale(0.95);
+}
+#mensagem {
+    margin-top: 25px;
+
+    color: grey;
+    font-size: 16px;
+}
+
+@keyframes rainbow{
+    0%{background-position: 0% 50%;}
+    100%{background-position: 100% 50%;}
+}
