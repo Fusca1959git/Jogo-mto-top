@@ -13,6 +13,7 @@ body{
 
     background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red, orange, yellow);
     background-size: 400% 100%;
+    background-clip: border-box;
     -webkit-background-clip: border-box;
     animation: rainbow 10s linear infinite;
 }
@@ -33,6 +34,7 @@ h1{
     padding: 10px 20px;
     border-radius: 10px;
     min-width: 100px;
+    border: 3px solid white;
 }
 .sub-info span{
     font-size: 20px;
@@ -43,8 +45,9 @@ h1{
     color: white;
     width: 250px;
     height: 250px;
-    margin-top: 40%;
-    border-color: rgb(0, 255, 4);
+    margin-top: 20%;
+    border-color: white;
+    border: 3px solid;
     border-radius: 100%;
     transition: all 0.1s;
     font-size: 60px;
@@ -56,11 +59,20 @@ h1{
 #butao:active{
     transform: scale(0.95);
 }
-#mensagem {
+.timer{ 
+    margin-top: 40px;
+    border: 3px solid;
+    border-radius: 10px;
+    color: white;
+    border-color: white ;
+    padding: 10px;
+    background-color: black;
+}
+#aviso {
     margin-top: 25px;
 
-    color: grey;
-    font-size: 16px;
+    color: black;
+    font-size: 20px;
 }
 
 @keyframes rainbow{
