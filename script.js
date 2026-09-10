@@ -8,6 +8,7 @@ const txtMultiplicador = document.getElementById("multiplicador");
 const txtTempo = document.getElementById("tempo")
 const butao = document.getElementById("butao");
 const mensagem = document.getElementById("aviso");
+const video = document.getElementById("vd")
 
 butao.onclick = function() {
     if (tempo === 0){
@@ -37,6 +38,13 @@ butao.onclick = function() {
                     "Tempo esgotado! Você fez " + pontos + " pontos.";
             }
         }, 1000)
+    }
+
+    if (pontos === Infinity) {
+        video.style.display = "block"
+        video.play();
+
+        return;
     }
 }
 

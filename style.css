@@ -74,6 +74,14 @@ h1{
     color: black;
     font-size: 20px;
 }
+#vd {
+    display: none;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    z-index: 9999;
+object-fit: cover;
+}
 
 @keyframes rainbow{
     0%{background-position: 0% 50%;}
