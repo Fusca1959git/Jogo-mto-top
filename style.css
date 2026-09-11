@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     display: flex;
     justify-content: center;
@@ -11,7 +10,18 @@ body{
 
     font-family: Arial, Helvetica, sans-serif;
 
-    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red, orange, yellow);
+    background: linear-gradient(to right,
+     red,
+      orange,
+       yellow,
+        green,
+         blue,
+          indigo,
+           violet,
+            red,
+             orange,
+              yellow);
+
     background-size: 400% 100%;
     background-clip: border-box;
     -webkit-background-clip: border-box;
@@ -27,7 +37,7 @@ h1{
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-top: 30px;
+    margin-top: 10%;
 }
 .sub-info{
     background-color: rgb(255, 0, 212);
@@ -45,7 +55,7 @@ h1{
     color: white;
     width: 250px;
     height: 250px;
-    margin-top: 20%;
+    margin-top: 10%;
     border-color: white;
     border: 3px solid;
     border-radius: 100%;
@@ -60,7 +70,7 @@ h1{
     transform: scale(0.95);
 }
 .timer{ 
-    margin-top: 40px;
+    margin-top: 10%;
     border: 3px solid;
     border-radius: 10px;
     color: white;
@@ -69,7 +79,7 @@ h1{
     background-color: black;
 }
 #aviso {
-    margin-top: 25px;
+    margin-top: 1%;
 
     color: black;
     font-size: 20px;
@@ -80,7 +90,7 @@ h1{
     inset: 0;
     width: 100vw;
     z-index: 9999;
-object-fit: cover;
+    object-fit: cover;
 }
 
 @keyframes rainbow{
